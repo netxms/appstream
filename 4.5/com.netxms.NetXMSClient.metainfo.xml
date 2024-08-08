@@ -3,8 +3,9 @@
    <id>com.netxms.NetXMSClient</id>
    <metadata_license>CC-BY-SA</metadata_license>
    <name>NetXMS 4.5</name>
-   <summary>Desktop client for NetXMS (v4.5.x) - network monitoring system</summary>
+   <summary>Control your network monitoring</summary>
    <description>
+      <p>This app is a desktop client for accessing NetXMS v4.5.x server.</p>
       <p>NetXMS is an enterprise grade multi-platform modular open source network management and
          monitoring system.</p>
       <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
