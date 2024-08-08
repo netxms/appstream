@@ -21,8 +21,39 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient.desktop</launchable>
    <releases>
+      <release version="4.5.7" date="2024-05-15">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#457</url>
+         <description>
+            <p>Changes in this version:</p>
+            <ul>
+               <li>Fixed incorrect LLDP topology information reading on some devices</li>
+               <li>Fixed background color issue in user agent's notification popup</li>
+               <li>Fixed memory leak in FreeBSD subagent</li>
+               <li>Fixed server clock widget in UI for time zones with non-whole hour difference
+                  from UTC</li>
+            </ul>
+         </description>
+      </release>
+      <release version="4.5.6" date="2024-04-15">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#456</url>
+         <description>
+            <p>Changes in this version:</p>
+            <ul>
+               <li>Fixed bug in background task scheduler</li>
+               <li>Fixed bug in reporting access control</li>
+               <li>Fixed minor memory leak in server</li>
+               <li>Fixed event storm detection event generation</li>
+               <li>Fixed incorrect notification popup size calculation in user agent</li>
+               <li>Fixed bug in NXSL function CreateUserAgentNotification</li>
+               <li>Improved housekeeper throttling logic</li>
+               <li>User-defined scripts for housekeeper</li>
+               <li>Object context menu available in alarm view</li>
+               <li>Call for DCI status change added to web API</li>
+            </ul>
+         </description>
+      </release>
       <release version="4.5.5" date="2024-04-02">
-         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md</url>
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#455</url>
          <description>
             <p>Changes in this version:</p>
             <ul>
@@ -40,24 +71,6 @@
                <li>Business service polls can be disabled or will not be executed if object is
                   unmanaged</li>
                <li>Added peer certificate verification for notification channels</li>
-            </ul>
-         </description>
-      </release>
-      <release version="4.5.6" date="2024-04-15">
-         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md</url>
-         <description>
-            <p>Changes in this version:</p>
-            <ul>
-               <li>Fixed bug in background task scheduler</li>
-               <li>Fixed bug in reporting access control</li>
-               <li>Fixed minor memory leak in server</li>
-               <li>Fixed event storm detection event generation</li>
-               <li>Fixed incorrect notification popup size calculation in user agent</li>
-               <li>Fixed bug in NXSL function CreateUserAgentNotification</li>
-               <li>Improved housekeeper throttling logic</li>
-               <li>User-defined scripts for housekeeper</li>
-               <li>Object context menu available in alarm view</li>
-               <li>Call for DCI status change added to web API</li>
             </ul>
          </description>
       </release>
