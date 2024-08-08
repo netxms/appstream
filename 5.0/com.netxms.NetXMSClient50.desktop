@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=NetXMS 5.0
+Exec=netxms-client.sh
+Terminal=false
+Icon=com.netxms.NetXMSClient50
+Type=Application
+Categories=Network;Monitor;
+StartupWMClass=netxms-client

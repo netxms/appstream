@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+   <id>com.netxms.NetXMSClient50</id>
+   <metadata_license>CC-BY-SA</metadata_license>
+   <name>NetXMS 5.0</name>
+   <summary>Desktop client for NetXMS (v5.0.x) - network monitoring system</summary>
+   <description>
+      <p>NetXMS is an enterprise grade multi-platform modular open source network management and
+         monitoring system.</p>
+      <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
+         graphing for all layers of IT infrastructure — from network devices to business application
+         layer.</p>
+      <p>Having been designed with flexibility and scalability in mind, NetXMS features a wide range
+         of supported platforms.</p>
+      <p>It is licensed under the GNU General Public License version 2 as published by the Free
+         Software Foundation.</p>
+   </description>
+   <url type="homepage">https://netxms.com</url>
+   <url type="vcs-browser">https://github.com/netxms/netxms/</url>
+   <url type="bugtracker">http://track.radensolutions.com/</url>
+   <url type="help">http://netxms.org/documentation/adminguide/</url>
+   <launchable type="desktop-id">com.netxms.NetXMSClient50.desktop</launchable>
+   <releases>
+      <release version="5.0.6" date="2024-07-17">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md</url>
+         <description>
+            <p>Changes in this version:</p>
+            <ul>
+               <li>Added notification channel driver for Mattermost</li>
+               <li>Topic support in notification channel driver for Telegram</li>
+               <li>Fixed incorrect client IP address reported by Windows agent in table System.ActiveUserSessions</li>
+               <li>Fixed bug in output of nxget -U</li>
+               <li>Fixed web UI crash when opening dashboard in kiosk mode</li>
+            </ul>
+         </description>
+      </release>
+   </releases>
+   <project_license>GPL-2.0-only</project_license>
+   <developer_name>Raden Solutions, SIA</developer_name>
+   <screenshots>
+      <screenshot type="default">
+         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.0/screenshots/screenshot1.png</image>
+         <caption>Dashboard showing Oracle metrics</caption>
+      </screenshot>
+      <screenshot>
+         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.0/screenshots/screenshot2.png</image>
+         <caption>List of active alarms on the server</caption>
+      </screenshot>
+      <screenshot>
+         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.0/screenshots/screenshot3.png</image>
+         <caption>Remote file manager</caption>
+      </screenshot>
+      <screenshot>
+         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.0/screenshots/screenshot4.png</image>
+         <caption>Geomap showing object location and statuses</caption>
+      </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <supports>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+   </supports>
+   <branding>
+      <color type="primary" scheme_preference="light">#c9ae94</color>
+      <color type="primary" scheme_preference="dark">#5e4627</color>
+   </branding>
+</component>
