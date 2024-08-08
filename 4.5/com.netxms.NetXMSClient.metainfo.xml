@@ -103,7 +103,7 @@
       <control>touch</control>
    </supports>
    <branding>
-      <color type="primary" scheme_preference="light">#c9ae94</color>
-      <color type="primary" scheme_preference="dark">#5e4627</color>
+      <color type="primary" scheme_preference="light">#d3dee4</color>
+      <color type="primary" scheme_preference="dark">#bbc5c9</color>
    </branding>
 </component>
