@@ -25,7 +25,6 @@
       <release version="4.5.7" date="2024-05-15">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#457</url>
          <description>
-            <p>Changes in this version:</p>
             <ul>
                <li>Fixed incorrect LLDP topology information reading on some devices</li>
                <li>Fixed background color issue in user agent's notification popup</li>
@@ -38,7 +37,6 @@
       <release version="4.5.6" date="2024-04-15">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#456</url>
          <description>
-            <p>Changes in this version:</p>
             <ul>
                <li>Fixed bug in background task scheduler</li>
                <li>Fixed bug in reporting access control</li>
@@ -56,7 +54,6 @@
       <release version="4.5.5" date="2024-04-02">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#455</url>
          <description>
-            <p>Changes in this version:</p>
             <ul>
                <li>Fixed scheduled file upload</li>
                <li>Fixed policy apply on object selection change</li>
