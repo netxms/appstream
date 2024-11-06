@@ -22,6 +22,16 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient50.desktop</launchable>
    <releases>
+      <release version="5.0.8" date="2024-09-05">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#508</url>
+         <description>
+            <ul>
+               <li>Implemented refresh for Event Processing Policy view</li>
+               <li>Fixed Arp Cache view refresh when data is not available</li>
+               <li>Fixed bug in network map link styling script processing</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.0.7" date="2024-08-15">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#507</url>
          <description>
