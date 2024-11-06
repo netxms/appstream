@@ -22,6 +22,21 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient50.desktop</launchable>
    <releases>
+      <release version="5.0.7" date="2024-08-15">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#507</url>
+         <description>
+            <ul>
+               <li>Fixed top level object display issues in "Infrastructure" perspective</li>
+               <li>NX-387 (Tool to read current (loaded) agent config)</li>
+               <li>NX-937 (Copy DCI value from object overview)</li>
+               <li>NX-2206 ("Package Deployment Monitor" should be resorted when status of any deployment changes)</li>
+               <li>NX-2549 (Exception in AlarmNotifier)</li>
+               <li>NX-2551 (Desktop UI show same warning in alarm viewer multiple times)</li>
+               <li>NX-2559 (Line colors and time frame not saved when double-clicking graphs in
+                  Performance tab)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.0.6" date="2024-07-17">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#506</url>
          <description>
