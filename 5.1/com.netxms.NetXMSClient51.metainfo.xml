@@ -26,7 +26,15 @@
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#510</url>
          <description>
             <ul>
-               <li>xxx</li>
+               <li>New automatic map type "hybrid topology"</li>
+               <li>Vlans view merged in to the Ports view</li>
+               <li>Added option to show physical links on L2 ad-hoc map</li>
+               <li>More accurate ad-hoc IP topology maps</li>
+               <li>Separate "Comments" view for objects</li>
+               <li>Templates perspective can be configured to show nodes under assigned templates</li>
+               <li>UI usability improvements</li>
+               <li>Improved network map multi link spacing</li>
+               <li>Fixed network map object label scaling on zoom in/out</li>
             </ul>
          </description>
       </release>
