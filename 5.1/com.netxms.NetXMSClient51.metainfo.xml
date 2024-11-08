@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-   <id>com.netxms.NetXMSClient50</id>
+   <id>com.netxms.NetXMSClient51</id>
    <metadata_license>CC-BY-SA</metadata_license>
    <name>NetXMS 5.1</name>
    <summary>Control your network monitoring</summary>
@@ -20,7 +20,7 @@
    <url type="vcs-browser">https://github.com/netxms/netxms/</url>
    <url type="bugtracker">http://track.radensolutions.com/</url>
    <url type="help">http://netxms.org/documentation/adminguide/</url>
-   <launchable type="desktop-id">com.netxms.NetXMSClient50.desktop</launchable>
+   <launchable type="desktop-id">com.netxms.NetXMSClient51.desktop</launchable>
    <releases>
       <release version="5.1.0" date="2024-11-05">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#510</url>
