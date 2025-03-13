@@ -22,6 +22,14 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient51.desktop</launchable>
    <releases>
+      <release version="5.1.3" date="2025-01-09">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#513</url>
+         <description>
+            <ul>
+               <li>Image attributes in Markdown viewer</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.1.2" date="2024-12-17">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#512</url>
          <description>
