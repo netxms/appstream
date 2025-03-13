@@ -22,6 +22,20 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient51.desktop</launchable>
    <releases>
+      <release version="5.1.2" date="2024-12-17">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#512</url>
+         <description>
+            <ul>
+               <li>Improved Markdown viewer</li>
+               <li>NX-2649 (Issues with "move to another container" context menu on interfaces)</li>
+               <li>NX-2650 (Add new hotkey in "execute server script" for "clear output+run script")</li>
+               <li>NX-2653 (Can not pin Data Collection tab which is in edit mode)</li>
+               <li>NX-2657 (IllegalStateException in nxmc log)</li>
+               <li>NX-2661 (Issues with loading image of DCI image element of map)</li>
+               <li>NX-2672 (Kiosk mode issues)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.1.1" date="2024-11-20">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#511</url>
          <description>
@@ -52,19 +66,23 @@
    <developer_name>Raden Solutions, SIA</developer_name>
    <screenshots>
       <screenshot type="default">
-         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot1.png</image>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot1.png</image>
          <caption>Dashboard showing Oracle metrics</caption>
       </screenshot>
       <screenshot>
-         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot2.png</image>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot2.png</image>
          <caption>List of active alarms on the server</caption>
       </screenshot>
       <screenshot>
-         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot3.png</image>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot3.png</image>
          <caption>Remote file manager</caption>
       </screenshot>
       <screenshot>
-         <image>https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot4.png</image>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.1/screenshots/screenshot4.png</image>
          <caption>Geomap showing object location and statuses</caption>
       </screenshot>
    </screenshots>
