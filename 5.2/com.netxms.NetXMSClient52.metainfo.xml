@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+   <id>com.netxms.NetXMSClient52</id>
+   <metadata_license>CC-BY-SA</metadata_license>
+   <name>NetXMS 5.2</name>
+   <summary>Control your network monitoring</summary>
+   <description>
+      <p>This app is a desktop client for accessing NetXMS v5.2.x server.</p>
+      <p>NetXMS is an enterprise grade multi-platform modular open source network management and
+         monitoring system.</p>
+      <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
+         graphing for all layers of IT infrastructure — from network devices to business application
+         layer.</p>
+      <p>Having been designed with flexibility and scalability in mind, NetXMS features a wide range
+         of supported platforms.</p>
+      <p>It is licensed under the GNU General Public License version 2 as published by the Free
+         Software Foundation.</p>
+   </description>
+   <url type="homepage">https://netxms.com</url>
+   <url type="vcs-browser">https://github.com/netxms/netxms/</url>
+   <url type="bugtracker">http://track.radensolutions.com/</url>
+   <url type="help">http://netxms.org/documentation/adminguide/</url>
+   <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
+   <releases>
+      <release version="5.2.0" date="2025-03-27">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#520</url>
+         <description>
+            <ul>
+               <li>User-defined tags on data collection items</li>
+               <li>Network maps can be shown in object's context in a same way as dashboards</li>
+               <li>Improved package deployment</li>
+               <li>Fixed direction and arrow size for Network Map links</li>
+               <li>Reworked Network Map link label location calculation for multi link connection</li>
+               <li>NX-74 (New node options - "expected capabilities")</li>
+               <li>NX-1301 (Automatic traffic DCI linking to interface)</li>
+               <li>NX-1302 ("Traffic" overlay for maps)</li>
+               <li>NX-2568 (Add case-insensitive versions of threshold operations "like" and "not
+                  like")</li>
+               <li>NX-2662 (Show map in tab on object)</li>
+               <li>NX-2667 (Context dashboard should be able to pick DCIs from child objects by
+                  specific DCI tag)</li>
+               <li>NX-2668 (Change all server configuration variables related to polling intervals
+                  to be modifiable without server restart)</li>
+               <li>NX-2689 (Add event ID (if available) to notification log)</li>
+               <li>NX-2694 (Add "front side only" property to rack objects)</li>
+               <li>NX-2695 (Fit rack image into the view both vertically and horizontally)</li>
+            </ul>
+         </description>
+      </release>
+   </releases>
+   <project_license>GPL-2.0-only</project_license>
+   <developer_name>Raden Solutions, SIA</developer_name>
+   <screenshots>
+      <screenshot type="default">
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.2/screenshots/screenshot1.png</image>
+         <caption>Dashboard showing Oracle metrics</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.2/screenshots/screenshot2.png</image>
+         <caption>List of active alarms on the server</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.2/screenshots/screenshot3.png</image>
+         <caption>Remote file manager</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/5.2/screenshots/screenshot4.png</image>
+         <caption>Geomap showing object location and statuses</caption>
+      </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <supports>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+   </supports>
+   <branding>
+      <color type="primary" scheme_preference="light">#d3dee4</color>
+      <color type="primary" scheme_preference="dark">#bbc5c9</color>
+   </branding>
+</component>
