@@ -22,6 +22,16 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient51.desktop</launchable>
    <releases>
+      <release version="5.1.5" date="2025-03-26">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#515</url>
+         <description>
+            <ul>
+               <li>System access rights included into user ACL report</li>
+               <li>Fixed bug in configuration export</li>
+               <li>NX-2714 (Status of interface not propagated to circuit)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.1.4" date="2025-03-02">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#514</url>
          <description>
