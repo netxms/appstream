@@ -22,6 +22,16 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.3" date="2025-06-05">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#523</url>
+         <description>
+            <ul>
+               <li>Default timeout for service checks via netsvc subagent set to 1 second</li>
+               <li>Fixed alarm severity text for Grafana API</li>
+               <li>Forced plain text web service requests are cached separately</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.2" date="2025-05-20">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#522</url>
          <description>
