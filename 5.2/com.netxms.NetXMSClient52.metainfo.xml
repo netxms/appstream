@@ -22,8 +22,22 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.2" date="2025-05-20">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#522</url>
+         <description>
+            <ul>
+               <li>Fixed insert into table "notification_log" for TimescaleDB</li>
+               <li>Improved client performance, by disabling alarm refresh if tab is not active</li>
+               <li>Fixed missing DCI on network map links when new DCI's are added on alreay opened
+                  map</li>
+               <li>Added job progress indication within views</li>
+               <li>Fixed NXSL get web service document functions</li>
+               <li>Added Grafana Infinity plugin web API endpoints</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.1" date="2025-04-08">
-         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#520</url>
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#521</url>
          <description>
             <ul>
                <li>NXSL function PostEvent accepts any event source object</li>
