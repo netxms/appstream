@@ -22,6 +22,38 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.4" date="2025-07-11">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#524</url>
+         <description>
+            <ul>
+               <li>System event is generated when responsible user for object added or removed</li>
+               <li>Support for custom OUI database entries</li>
+               <li>Fixed bug in loading NXSL "stdlib" script</li>
+               <li>Add BOM sequence skip for structured data extractors (including web service
+                  extractor)</li>
+               <li>Network map fixes: refresh while drag, jumping labels on links and not saved
+                  object location after 'align to grid' action</li>
+               <li>NXSL function JsonParse sets global variables $jsonErrorMessage, $jsonErrorLine,
+                  and $jsonErrorColumn after parsing error</li>
+               <li>NXSL function JsonParse accepts optional second argument to control
+                  interpretation of integers as floating point numbers</li>
+               <li>Configurable data collection scheduling mode that requires connectivity before
+                  scheduling DCI for collection</li>
+               <li>NX-2737 (Switch from obsolete SQLite shared cache mode to WAL mode)</li>
+               <li>NX-2783 (Network discovery view shows "Invalid thread access" error on web)</li>
+               <li>NX-2788 (Changing Objects.Nodes.SyncNamesWithDNS requires server restart, while
+                  it should not)</li>
+               <li>NX-2790 (Interface Overview view should have node name when interface is under a
+                  circuit)</li>
+               <li>NX-2795 (Selection on map is frequently lost)</li>
+               <li>NX-2797 (Hide passwords in server configuration variables view)</li>
+               <li>NX-2802 (Show units for server configuration variables)</li>
+               <li>NX-2806 (Data collection scheduling mode that requires connectivity before
+                  scheduling DCI for collection)</li>
+               <li>NX-2807 (EPP export does not escape &lt; and &gt; in XML attributes)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.3" date="2025-06-05">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#523</url>
          <description>
