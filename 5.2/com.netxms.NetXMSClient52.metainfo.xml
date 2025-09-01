@@ -22,6 +22,33 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.5" date="2025-09-02">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#525</url>
+         <description>
+            <ul>
+               <li>Agent configuration file options can be passed from command line</li>
+               <li>New AIX agent metrics: System.Memory.Physical.Client,
+                  System.Memory.Physical.ClientPerc, System.Memory.Physical.Computational,
+                  System.Memory.Physical.ComputationalPerc</li>
+               <li>User ACL reports generated in XLSX format</li>
+               <li>Improved driver for Ubiquity AirMax devices</li>
+               <li>Running configuration logged after log rotation</li>
+               <li>Configurable maximum size for cached routing tables</li>
+               <li>New metric USB.ConnectedCount in WinNT subagent</li>
+               <li>Fixed incorrect object status calculation after restarting server with resolved
+                  alarms</li>
+               <li>Fixed bug in network map display in dashboard widget</li>
+               <li>Fixed bug in calculation of physical CPU usage on AIX</li>
+               <li>Fixed missing agent database table file_integrity</li>
+               <li>NX-2794 (Add more info to log message: Potential node x.x.x.x in zone x rejected
+                  (IP address is known as cluster resource address))</li>
+               <li>NX-2819 (DCI data recalculation not working for TimescaleDB)</li>
+               <li>NX-2822 (Alarms not appearing if nxmc has reconnected)</li>
+               <li>NX-2825 (Tables missing PK, this breaks master-master replication (at least in
+                  Postgres))</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.4" date="2025-07-11">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#524</url>
          <description>
