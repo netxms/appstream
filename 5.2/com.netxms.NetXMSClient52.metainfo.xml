@@ -22,6 +22,28 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.7" date="2025-11-10">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#527</url>
+         <description>
+            <ul>
+               <li>Subagent for monitoring Redis database</li>
+               <li>Optimizations in server process memory usage</li>
+               <li>Fixed bug that cause completed system scheduled tasks not being deleted from database</li>
+               <li>Fixed incorrect behavior of NXSL functions Math::Min and Math::Max when first argument is an array</li>
+               <li>Fixed server crash on zero period query for business service uptime</li>
+               <li>Fixed incorrect VLAN list retrieval on some Juniper switches</li>
+               <li>NX-2594 (Possible server deadlock in network discovery)</li>
+               <li>NX-2652 (Improve overview page for interfaces)</li>
+               <li>NX-2813 (duplicate key value violates unique constraint "interface\_vlan\_list\_pkey")</li>
+               <li>NX-2836 (Unbind not working from Agent Tunnels view)</li>
+               <li>NX-2837 (Cannot read threshold summary: incompatible operation in Thresholds view on rack)</li>
+               <li>NX-2850 (Tab keyboard button not working in script editor in WEB UI)</li>
+               <li>NX-2853 (Add option to merge separators for agent external table)</li>
+               <li>NX-2856 (Business service availability report crash server process)</li>
+               <li>NX-2859 (Add internal table with notification channels)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.6" date="2025-09-18">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#526</url>
          <description>
