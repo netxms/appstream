@@ -16,6 +16,11 @@
       <p>It is licensed under the GNU General Public License version 2 as published by the Free
          Software Foundation.</p>
    </description>
+   <keywords>
+      <keyword>network monitoring software</keyword>
+      <keyword>network management tool</keyword>
+      <keyword>enterprise grade nms</keyword>
+   </keywords>
    <url type="homepage">https://netxms.com</url>
    <url type="vcs-browser">https://github.com/netxms/netxms/</url>
    <url type="bugtracker">http://track.radensolutions.com/</url>
