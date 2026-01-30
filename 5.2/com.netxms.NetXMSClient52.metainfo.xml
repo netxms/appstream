@@ -27,6 +27,23 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient52.desktop</launchable>
    <releases>
+      <release version="5.2.8" date="2025-12-04">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#528</url>
+         <description>
+            <ul>
+               <li>Structure of idata and tdata tables on PostgreSQL reverted to previous schema</li>
+               <li>nxadm command line option to check if server process is running and has completed initialization</li>
+               <li>Fixed bug in reading physical disk information on Windows</li>
+               <li>Fixed command injection vulnerability in PhysicalDisk.* metrics</li>
+               <li>NX-2656 (Improve UX of the notification popup - X should close message, not the whole dialog)</li>
+               <li>NX-2801 (New version of JQ library on Windows)</li>
+               <li>NX-2827 (Allow editing of tools added to Object Tools dashboard element)</li>
+               <li>NX-2872 (%d format string incorrectly handled in chart legend)</li>
+               <li>NX-2875 (PhysicalDisk.SmartAttr() metric not working)</li>
+               <li>NX-2876 (Incorrect value for System.CPU.Count on Windows machines with more than 64 logical processors)</li>
+            </ul>
+         </description>
+      </release>
       <release version="5.2.7" date="2025-11-10">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#527</url>
          <description>
