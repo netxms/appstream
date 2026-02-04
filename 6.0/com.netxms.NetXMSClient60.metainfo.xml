@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="desktop-application">
+   <id>com.netxms.NetXMSClient60</id>
+   <metadata_license>CC-BY-SA</metadata_license>
+   <name>NetXMS 6.0</name>
+   <summary>Control your network monitoring</summary>
+   <description>
+      <p>This app is a desktop client for accessing NetXMS v6.0.x server.</p>
+      <p>NetXMS is an enterprise grade multi-platform modular open source network management and
+         monitoring system.</p>
+      <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
+         graphing for all layers of IT infrastructure — from network devices to business application
+         layer.</p>
+      <p>Having been designed with flexibility and scalability in mind, NetXMS features a wide range
+         of supported platforms.</p>
+      <p>It is licensed under the GNU General Public License version 2 as published by the Free
+         Software Foundation.</p>
+   </description>
+   <keywords>
+      <keyword>network monitoring software</keyword>
+      <keyword>network management tool</keyword>
+      <keyword>enterprise grade nms</keyword>
+   </keywords>
+   <url type="homepage">https://netxms.com</url>
+   <url type="vcs-browser">https://github.com/netxms/netxms/</url>
+   <url type="bugtracker">http://track.radensolutions.com/</url>
+   <url type="help">http://netxms.org/documentation/adminguide/</url>
+   <launchable type="desktop-id">com.netxms.NetXMSClient60.desktop</launchable>
+   <releases>
+      <release version="6.0.0" date="2026-02-05">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#600</url>
+         <description>
+            <ul>
+               <li>Integrated AI assistant and AI agent</li>
+               <li>AI-powered anomaly detection</li>
+               <li>Built-in basic incident management</li>
+               <li>Improved SSH support</li>
+               <li>Event processing rules with empty filters are skipped (instead of "match all" behavior)</li>
+               <li>Instance discovery for push DCIs</li>
+               <li>Any NXSL object can be converted to JSON</li>
+               <li>Optional function calls in NXSL</li>
+               <li>New NXSL operator "has" for simplified bit field tests</li>
+               <li>Changed NXSL variable lookup priority (local variables now have higher priority)</li>
+               <li>New NXSL keyword "local" for explicit creation of local variable</li>
+               <li>NXSL functions and string methods for fuzzy matching</li>
+               <li>New methods in NXSL classes JsonObject and JsonArray to set value with explicit data type</li>
+               <li>Improved web service call interface in NXSL</li>
+               <li>Removed unused 'Objects.Security.ReadAccessViaMap' server configuration variable</li>
+               <li>Node decommissioning</li>
+               <li>Fixed unique constraint failure for network\_map\_deleted\_nodes table</li>
+               <li>Added SNMP Walk button to MIB Explorer with the option to walk OIDs not present in NetXMS MIB database</li>
+               <li>Integration with HashiCorp Vault for secure credential management</li>
+               <li>Server database password can be provided via external command</li>
+               <li>Added lock for database inline upgrade</li>
+               <li>DCI option to interpret unsupported state as data collection error</li>
+               <li>New internal table Server.Queues</li>
+               <li>Objects can be marked as "hidden"</li>
+               <li>Drill-down option for dashboard element "Status indicator"</li>
+               <li>Drivers for Planet LAN switches</li>
+               <li>Drivers for Planet industrial switches</li>
+               <li>Fixed "Go to DCI" action</li>
+               <li>Dropped support of AIX 6.1</li>
+               <li>Reworked configuration export/import to use JSON instead of XML; XML import is retained for backward compatibility</li>
+               <li>Fixed deadlock in session termination caused by DCI force poll reference leak</li>
+               <li>Fixed interface IP address access by adding lock to prevent use-after-free</li>
+               <li>NX-119 (Add support for drops counters on interfaces)</li>
+               <li>NX-352 (Use display hint from MIB files in server and command line tools)</li>
+               <li>NX-484 (Open Event Log from Event monitor)</li>
+               <li>NX-507 (Show effective ACL for object)</li>
+               <li>NX-531 (Use ENTITY MIB for physical port mapping)</li>
+               <li>NX-600 (MikroTik authentication failure alarms from syslog)</li>
+               <li>NX-616 (nxdbmgr should detect missing proxy node for item)</li>
+               <li>NX-660 (Scroll network map by dragging on empty space)</li>
+               <li>NX-753 (Interface speed mismatch or under-utilization detection)</li>
+               <li>NX-879 (Agent explorer (like MIB explorer))</li>
+               <li>NX-983 (Event details accessible from event monitor)</li>
+               <li>NX-1072 (SNMP context support in data collection)</li>
+               <li>NX-1293 (Insert data with timestamp from NXSL)</li>
+               <li>NX-1439 (Dashboard widget "Table" should notify user DCI is in error state instead of showing empty table)</li>
+               <li>NX-1443 (Merge threshold/table threshold rules in default EPP)</li>
+               <li>NX-1795 (On TimescaleDB when DCI storage class changes historical data should get copied to new storage class)</li>
+               <li>NX-1826 (Graph option to not join lines if time between is over a specific value)</li>
+               <li>NX-1872 (DCI Table column ordering)</li>
+               <li>NX-1917 (Add "Copy SQL" button to Log viewers)</li>
+               <li>NX-1979 (Ability to set DCI into maintenance mode)</li>
+               <li>NX-2160 (Option to not show default columns in Find Object -&gt; Query results)</li>
+               <li>NX-2188 (Add search/filter in network maps)</li>
+               <li>NX-2202 (Add access to alarm's related event list from NXSL)</li>
+               <li>NX-2246 (Add report retention and housekeeper in reporting server)</li>
+               <li>NX-2344 (Decommissioning for nodes)</li>
+               <li>NX-2398 (Add method for node and interface setPollCountForStatusChange)</li>
+               <li>NX-2437 (Ability to change MAC address on an interface)</li>
+               <li>NX-2447 (Add ability to instance-discover notification channels and server queues)</li>
+               <li>NX-2462 (Add "value with multipliers and units" column in DCI history view)</li>
+               <li>NX-2496 (Add methods to Tunnel class for binding new tunnels)</li>
+               <li>NX-2497 (Add option "go to DCI" for alarms that are related to a DCI)</li>
+               <li>NX-2558 (Add separate access right to manage agent policies within templates)</li>
+               <li>NX-2573 (Event template editor window is not resizable)</li>
+               <li>NX-2579 (User is not able to create node without having access on whole zone if zonning is enabled)</li>
+               <li>NX-2588 (Show unsupported DCIs by default)</li>
+               <li>NX-2612 (EPP rule import does not warn that a rule is referring missing event)</li>
+               <li>NX-2638 (After disabling a DCI in template there's no message with apply button is displayed)</li>
+               <li>NX-2643 (Add function to read list of available packages (and versions) in package manager from NXSL)</li>
+               <li>NX-2655 (Add an option to select sort column and ASC\\DES for Table DCI on Dashboard)</li>
+               <li>NX-2677 (Remove support of \ in macro processing)</li>
+               <li>NX-2697 (Improve management of authentication tokens)</li>
+               <li>NX-2709 (Automatically add scripts mentioned in macros in configuration export view)</li>
+               <li>NX-2710 (Traffic graphs for interface on overview)</li>
+               <li>NX-2722 (Add attributes of class User to Alarm and AlarmComment class)</li>
+               <li>NX-2736 (NXSL function to return DCI values as (timestamp, value) tuples)</li>
+               <li>NX-2743 (Do not execute EPP rule if it has no filters)</li>
+               <li>NX-2747 (Add threshold id to event parameters)</li>
+               <li>NX-2756 (Events are not correlated across server restarts)</li>
+               <li>NX-2757 (Add view deactivation on perspective change)</li>
+               <li>NX-2758 (NXSL function to find all DCIs of a node that have specific related object)</li>
+               <li>NX-2763 (Dashboard charts ignore multiplier setting in DCI)</li>
+               <li>NX-2771 (Display current grace period for automatic template removal in template property page)</li>
+               <li>NX-2773 (Rework threshold event repetition to exact interval)</li>
+               <li>NX-2774 (Allow to specify column for instance-name for instance discovery from a table)</li>
+               <li>NX-2778 (Logwatch should save file position in agent DB)</li>
+               <li>NX-2779 (Add instance value as event parameter)</li>
+               <li>NX-2789 (Add separate boolean attributes to represent state bits in NXSL network object classes)</li>
+               <li>NX-2791 (Keep timestamp of when interface peer information was last updated)</li>
+               <li>NX-2792 (New way to create links on custom map that would set link interfaces from topology)</li>
+               <li>NX-2803 (Repeat interface and network service events when node goes out of maintenance)</li>
+               <li>NX-2810 (Log parser metrics work correctly if only one file is given to the parser)</li>
+               <li>NX-2811 (Data collection edit mode displayed incorrectly when going from a template to a node)</li>
+               <li>NX-2814 (Auto link objects should allow object linking even if non object elements are selected)</li>
+               <li>NX-2815 (Leave disabled "Link objects" option in menu when multiple objects are selected)</li>
+               <li>NX-2817 (Rename MapLinkStyle:: constants)</li>
+               <li>NX-2818 (Investigate and update MySQL monitoring subagent)</li>
+               <li>NX-2823 (Drill-down dashboard not opening)</li>
+               <li>NX-2824 (Use float for delta per second or minute calculation)</li>
+               <li>NX-2826 (Automatic dashboard creation from template)</li>
+               <li>NX-2830 (Add option to export-import syslog and windows event processing rules)</li>
+               <li>NX-2839 (DCI "Query" button fails silently on error)</li>
+               <li>NX-2840 (Add parameterized metrics for structured metric provider)</li>
+               <li>NX-2841 (Add ability to monitor and control systemd services on Linux)</li>
+               <li>NX-2842 (Pinned line chart changes time period also for original chart)</li>
+               <li>NX-2844 (Header with DCI name, [DCI metric] and units in DCI history view)</li>
+               <li>NX-2854 (Ability to specify default column type for agent external table)</li>
+               <li>NX-2857 (Limit notification channel message queue and create event when limit is hit)</li>
+               <li>NX-2858 (Add debug console command to clear notification channel queue)</li>
+               <li>NX-2863 (Stop list for ports)</li>
+               <li>NX-2869 (Local variable should have priority over object attributes in object query)</li>
+               <li>NX-2870 (NXSL keyword to explicitly declare variable as local)</li>
+               <li>NX-2871 (Add SYS\_IF\_UNMANAGED event)</li>
+               <li>NX-2873 (Rename "Full configuration poll")</li>
+               <li>NX-2877 (Show "What's new" only to specific users and only once)</li>
+               <li>NX-2879 (Add GUID support in EPP editor filter)</li>
+               <li>Nx-2882 (Ask whether to delete or detach DCIs on template deletion)</li>
+               <li>NX-2884 (Use character limit for varchar fields on Oracle)</li>
+               <li>NX-2887 (Use DCI multiplier configuration to format DCI value in DCI summary tables in Grafana Infinity API)</li>
+               <li>NX-2889 (New DCI option: save only every n-th sample)</li>
+               <li>NX-2891 (Add lastAlarmId attribute to Event class)</li>
+               <li>NX-2892 (callWebService() does not set errorMessage if EnableWebServiceProxy is not enabled)</li>
+               <li>NX-2894 (DCI description not appearing in Data Source table in Saved Graph)</li>
+               <li>NX-2895 (Action with event and without alarm using DCI macro crashes server)</li>
+               <li>NX-2896 (Unified DCI template matching for context dashboard elements)</li>
+               <li>NX-2902 (In the notification channel, when using telegram and Proxy and DisableIPv6 = true, the server queries DNS IPv6 AAAA)</li>
+               <li>NX-2903 (Add support for # character in cron format)</li>
+               <li>NX-2904 (System.IO.DiskTime calculated incorrectly on Windows)</li>
+               <li>NX-2905 (Report Windows Store Installed Applications in Software Inventory)</li>
+               <li>NX-2906 (Values sent by nxapush should be cached in agent DB if connection to server is not available)</li>
+               <li>NX-2908 (Object/Tag should be displayed as &lt;context&gt; for DCI template elements of dashboard status indicator)</li>
+               <li>NX-2912 (Last known table value is shown instead of error when table DCI is in error due to connectivity loss to agent)</li>
+               <li>NX-2914 (DCIs from cluster are not reapplied to nodes under cluster on housekeeper run)</li>
+               <li>NX-2915 (DCIs with template &lt;unknown&gt; left on nodes when a cluster is deleted)</li>
+            </ul>
+         </description>
+      </release>
+   </releases>
+   <project_license>GPL-2.0-only</project_license>
+   <developer_name>Raden Solutions, SIA</developer_name>
+   <screenshots>
+      <screenshot type="default">
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.0/screenshots/screenshot1.png</image>
+         <caption>Dashboard showing Oracle metrics</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.0/screenshots/screenshot2.png</image>
+         <caption>List of active alarms on the server</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.0/screenshots/screenshot3.png</image>
+         <caption>Remote file manager</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.0/screenshots/screenshot4.png</image>
+         <caption>Geomap showing object location and statuses</caption>
+      </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <supports>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+   </supports>
+   <branding>
+      <color type="primary" scheme_preference="light">#d3dee4</color>
+      <color type="primary" scheme_preference="dark">#bbc5c9</color>
+   </branding>
+</component>
