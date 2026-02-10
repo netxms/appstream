@@ -27,6 +27,22 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient60.desktop</launchable>
    <releases>
+      <release version="6.0.1" date="2026-02-09">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#601</url>
+         <description>
+            <ul>
+               <li>Improved database upgrade procedure (no long data conversion during upgrade)</li>
+               <li>Agent environment can be set from server using custom attributes</li>
+               <li>Fixed object names not resolved on "Dashboards and Maps" property page (showing object IDs instead of names)</li>
+               <li>Fixed missing action list loading in Event Processing Policy editor</li>
+               <li>Fixed business service uptime calculation for business services containing other business services</li>
+               <li>Fixed database upgrade procedure failure on Microsoft SQL Server</li>
+               <li>Added support for Anthropic API for AI agent</li>
+               <li>Implemented changes proposed in PR #155 (IP address wipe on DNS resolution failure and DNS resolution conflict detection)</li>
+               <li>Fixed NumberFormatException in legacy REST API when setting object flags with high bit (values &gt;= 0x80000000)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.0.0" date="2026-02-05">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#600</url>
          <description>
