@@ -27,6 +27,25 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient60.desktop</launchable>
    <releases>
+      <release version="6.0.2" date="2026-02-14">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#602</url>
+         <description>
+            <ul>
+               <li>Added wireless controller bridge for UniFi controllers (PR #255)</li>
+               <li>Small fixes in background conversion of collected data</li>
+               <li>Improved AI assistant guardrails</li>
+               <li>Added internal metrics for monitoring AI providers usage</li>
+               <li>Added TLS support in web API using monitored reproxy process</li>
+               <li>NX-1658 (Drag and Drop confirmation prompt)</li>
+               <li>NX-2495 (Do not treat disk I/O error as file rotation in log file monitoring)</li>
+               <li>NX-2900 (Business Service check script editor should have hint)</li>
+               <li>NX-2907 (ssh.nsm can not be loaded on Windows)</li>
+               <li>NX-2913 (Cluster DCI is not populated to nodes under cluster)</li>
+               <li>NX-2919 (Push DCI from agent log parsing may come in wrong order)</li>
+               <li>NX-2925 (Proxy selector should show only relevant objects)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.0.1" date="2026-02-09">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#601</url>
          <description>
