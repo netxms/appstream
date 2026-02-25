@@ -27,6 +27,22 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient60.desktop</launchable>
    <releases>
+      <release version="6.0.3" date="2026-02-25">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#603</url>
+         <description>
+            <ul>
+               <li>Added wireless controller bridge for Aruba Instant controllers (PR #257)</li>
+               <li>Improved interactive SSH mode support</li>
+               <li>Improved web API</li>
+               <li>Windows agent renames in-use files during upload if they cannot be replaced</li>
+               <li>Fixed incorrect handling of empty tool call list in LLM response</li>
+               <li>Fixed bug in database schema upgrade on Microsoft SQL Server</li>
+               <li>NX-2369 (Option to add number of items in a container)</li>
+               <li>NX-2867 (Disable "Create database and database user before initialization" if SQLite selected in Windows installer)</li>
+               <li>NX-2922 (New agent actions: enable / disable ExternalMetricProvider)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.0.2" date="2026-02-14">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#602</url>
          <description>
