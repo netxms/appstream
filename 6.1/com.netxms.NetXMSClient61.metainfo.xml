@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="desktop-application">
+   <id>com.netxms.NetXMSClient61</id>
+   <metadata_license>CC-BY-SA</metadata_license>
+   <name>NetXMS 6.1</name>
+   <summary>Control your network monitoring</summary>
+   <description>
+      <p>This app is a desktop client for accessing NetXMS v6.1.x server.</p>
+      <p>NetXMS is an enterprise grade multi-platform modular open source network management and
+         monitoring system.</p>
+      <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
+         graphing for all layers of IT infrastructure — from network devices to business application
+         layer.</p>
+      <p>Having been designed with flexibility and scalability in mind, NetXMS features a wide range
+         of supported platforms.</p>
+      <p>It is licensed under the GNU General Public License version 2 as published by the Free
+         Software Foundation.</p>
+   </description>
+   <keywords>
+      <keyword>network monitoring software</keyword>
+      <keyword>network management tool</keyword>
+      <keyword>enterprise grade nms</keyword>
+   </keywords>
+   <url type="homepage">https://netxms.com</url>
+   <url type="vcs-browser">https://github.com/netxms/netxms/</url>
+   <url type="bugtracker">http://track.radensolutions.com/</url>
+   <url type="help">http://netxms.org/documentation/adminguide/</url>
+   <launchable type="desktop-id">com.netxms.NetXMSClient61.desktop</launchable>
+   <releases>
+      <release version="6.1.0" date="2026-04-16">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#610</url>
+         <description>
+            <ul>
+               <li>Metric data ingestion from OTLP (Open Telemetry Protocol)</li>
+               <li>Integration with Oxidized (network device backup system)</li>
+               <li>Connection tracking for nodes / MAC addresses</li>
+               <li>Two-factor authentication can be enforced on group level or globally</li>
+               <li>View rearrange in pin areas and move between pin areas using drag and drop</li>
+               <li>New event templates can be created directly from event selector</li>
+               <li>Removed hard limit of 16 items on charts</li>
+               <li>Use ipNetToPhysicalTable in addition to ipNetToMediaTable for reading ARP cache via SNMP</li>
+               <li>Implemented metric Net.IP.Stats.TCPConnections with named parameters for counting TCP connections with optional state and IP version filtering</li>
+               <li>Added agent list System.CPU.Instances for CPU instance discovery on all platforms</li>
+               <li>Service accounts (can login only via web API using tokens)</li>
+               <li>Added option to move and reorder columns in table and tree view</li>
+               <li>Fixed editing of mapping table name, description and flag</li>
+               <li>Implemented metric System.IO.DiskTime for AIX, FreeBSD, Mac OS X, and Solaris</li>
+               <li>Port forwarding in object tools allows conection to remote address from tool target node</li>
+               <li>Improved trusted device implementation for 2FA</li>
+               <li>Improved NXSL editor in web UI</li>
+               <li>Session agent for Linux with screenshot functionality</li>
+               <li>Added Find to MIB Explorer with support for searching by OID, name, and description</li>
+               <li>Full process metrics suite for Darwin subagent implemented</li>
+               <li>Improved alarm loading performance on server startup</li>
+               <li>AI skills and functions can be selectively disabled by system administrator</li>
+               <li>Improved AI assistant data security</li>
+               <li>Added driver for Zyxel ES switch line</li>
+               <li>Network discovery filter script provides access to agent metrics on discovered node</li>
+               <li>Mutually exclusive templates</li>
+               <li>Throttling for notification channels</li>
+               <li>Security contexts in NXSL</li>
+               <li>Separate set of SNMP credentials for polling and trap receiving</li>
+               <li>Correct parsing of syslog messages according to RFC5424</li>
+               <li>Option to exclude certain subnets from topology, allowing duplicate IP addresses</li>
+               <li>Deploy new / upgrade existing report definitions from GUI</li>
+               <li>Alarm notification popups in web UI</li>
+               <li>Metrics for certificates in Windows certificate store</li>
+               <li>Support for SSH keyboard-interactive authentication method</li>
+               <li>New NetXMS installations generate self-signed certificate for agent to server connection</li>
+               <li>EtherNet/IP proxy support in agent and server</li>
+               <li>Absence detection mode in log parser rules</li>
+               <li>Server configuration option to limit minimal SNMP version</li>
+               <li>Tool for explaining object status calculation</li>
+               <li>Display Wi-Fi clients on L2 map</li>
+               <li>#4 (DCI Table for SNMP values doesn't show any values)</li>
+               <li>#253 (NXSL select min/max picks wrong when-clause when winner is not in last position)</li>
+               <li>#375 / NX-169 (Use layer 2 topology information for event correlation)</li>
+               <li>#644 (Fixed race condition in table threshold conditions editor)</li>
+               <li>#673 / NX-462 (Display L2 routes - "MAC route to" and "MAC route from")</li>
+               <li>#804 / NX-593 (Connection history for nodes, IP and MAC addresses)</li>
+               <li>#864 / NX-653 (Parameter Oracle.TableSpace.Status returns data collection error for offline tablespace)</li>
+               <li>#996 / NX-786 (Maintenance mode context menu should be aware of the current state of the node)</li>
+               <li>#1155 / NX-945 (Screenshot support on Linux)</li>
+               <li>#1227 / NX-1017 (There should be generated event and created alarm in case of problems with Action execution)</li>
+               <li>#1342 / NX-1132 (MAC addresses in tables)</li>
+               <li>#1438 / NX-1228 (SNMP down not correlated to Proxying Agent down)</li>
+               <li>#1532 / NX-1322 (Object Tools - Edit Input Fields - Can't edit name after saving)</li>
+               <li>#1533 / NX-1323 (Object Tools - Input Fields - Improvements)</li>
+               <li>#1544 / NX-1334 (nxdbmgr import fails on oracle)</li>
+               <li>#1562 / NX-1352 (Add filtering for performance tab)</li>
+               <li>#1600 / NX-1390 (nxdbmgr - new "object consistency reset" function)</li>
+               <li>#1705 / NX-1495 (Support for array properties in WMI.Query)</li>
+               <li>#1789 / NX-1579 (Improve L2 topology based event correlation)</li>
+               <li>#1794 / NX-1584 (Console doesn't tell user that ICMP subagent is missing)</li>
+               <li>#1801 / NX-1591 (Wrong IP address discovery on Cisco ASA in failover configuration)</li>
+               <li>#1850 / NX-1640 (Alarm list not refreshed when backend DB connection lost)</li>
+               <li>#1895 / NX-1685 (Option to return threshold value and actual value from threshold script)</li>
+               <li>#1972 / NX-1762 (Ensure, that agent is checking on startup, that all policy files have corresponding entries in agent DB)</li>
+               <li>#2084 / NX-1874 (Replace special DCI macros with standard EPP macros)</li>
+               <li>#2098 / NX-1889 (Add additional checks on deduplication by reading more data via SNMP)</li>
+               <li>#2118 / NX-1909 (Ethernet-IP interface only checks one interface)</li>
+               <li>#2159 / NX-1950 (When importing EPP configuration with actions not present in system console should give a warning)</li>
+               <li>#2180 / NX-1971 (Populate object tools input fields with predefined values)</li>
+               <li>#2206 / NX-1997 (Windows event log synchronization should synchronize records that were created while agent was not running)</li>
+               <li>#2248 / NX-2039 (Add Date&amp;Time Picker input field type)</li>
+               <li>#2325 / NX-2117 (Chassis modules position calculated incorrectly in rack)</li>
+               <li>#2331 / NX-2123 (Table Last Value view is not refreshed correctly)</li>
+               <li>#2343 / NX-2135 ("nxdbmgr init" should generate random password for "admin" user and show it to admin during installation)</li>
+               <li>#2349 / NX-2141 (Replace empty primary hostname with 0.0.0.0)</li>
+               <li>#2354 / NX-2146 (Fix /lib/systemd/system/nxagentd.service PIDFile)</li>
+               <li>#2359 / NX-2151 (Implement alarm notification popups in web UI)</li>
+               <li>#2364 / NX-2156 (User filter for Process.Count parameter on Darwin)</li>
+               <li>#2475 / NX-2268 (nx-collect-server-diag shoul be fixed to ask for credentials for nxadm)</li>
+               <li>#2492 / NX-2285 (Selection dialog for instance discovery data source)</li>
+               <li>#2599 / NX-2393 (Create new NXSL function instead of format())</li>
+               <li>#2608 / NX-2402 (Add ability to fill vendor, product name, product version and serial number from conf poll hook script)</li>
+               <li>#2615 / NX-2409 (Issues when renaming event used in log parser policy)</li>
+               <li>#2622 / NX-2416 (SYS\_DUPLICATE\_IP\_ADDRESS on service interfaces of Juniper routers)</li>
+               <li>#2635 / NX-2429 (Add option to create SNMP table from MIB Explorer)</li>
+               <li>#2639 / NX-2433 (Dashboard widget "Gauge" should display error if a DCI is in error state)</li>
+               <li>#2660 / NX-2454 (Unexpected SYS\_DUPLICATE\_IP\_ADDRESS generation)</li>
+               <li>#2662 / NX-2456 (Have separate set of SNMP credentials for polling and trap receiving in node properties)</li>
+               <li>#2689 / NX-2483 (Dashboard Status Indicator with DCI Template source picks only one DCI)</li>
+               <li>#2735 / NX-2530 (Add system events SYS\_NODE\_DELETED and SYS\_OBJECT\_DELETED)</li>
+               <li>#2748 / NX-2543 (Active discovery for zones without zone proxy fails silently)</li>
+               <li>#2758 / NX-2555 (Add ability to make two or more templates mutually exclusive)</li>
+               <li>#2768 / NX-2565 (Link on map is not removed when same switch port connected to another interface of same PC)</li>
+               <li>#2786 / NX-2583 (Do not show clusters in subnet tree if they do not have subnet as a parent)</li>
+               <li>#2792 / NX-2589 (Add CPU usage in % in processes tab)</li>
+               <li>#2794 / NX-2591 (Importing dashboard without matching node and dci imports it as context dashboard)</li>
+               <li>#2825 / NX-2622 (Remove Utilization information on node's interfaces when corresponding DCIs are deleted or go into Error)</li>
+               <li>#2826 / NX-2623 (Agent do not collect windows event log records in custom journal)</li>
+               <li>#2837 / NX-2634 (Deploy new / upgrade existing report definitions from GUI)</li>
+               <li>#2890 / NX-2687 (Add metrics for certificates in Windows certificate store)</li>
+               <li>#2895 / NX-2692 (Terminate unexpected up alarms when interface is disabled)</li>
+               <li>#2861 / NX-2658 (delete nodes process cause high cpu)</li>
+               <li>#2903 / NX-2700 (Add server configuration to limit minimal SNMP version)</li>
+               <li>#2909 / NX-2706 (Add the ability to syslog parser - "execute processing only if there was no event or entries in the syslog parser")</li>
+               <li>#2922 / NX-2719 (SQL query failed invalid byte sequence for encoding)</li>
+               <li>#2927 / NX-2724 (Display Wi-Fi clients on L2 map)</li>
+               <li>#2934 / NX-2731 (Have stage1 and stage2 filter scripts inside Network Discovery view)</li>
+               <li>#2948 / NX-2745 (Add Expand All / Collapse All buttons to Software Packages search view)</li>
+               <li>#2951 / NX-2748 (Do not fallback to management node if unable to find node for macro expansion)</li>
+               <li>#2961 / NX-2759 (Show External Resources in Additional Object Information)</li>
+               <li>#2963 / NX-2761 (Default map setting for link color)</li>
+               <li>#2982 / NX-2780 (Events and Push DCI's from logwatch policies should be sent only to the source server of policy)</li>
+               <li>#2987 / NX-2785 (Throttling for notification channels)</li>
+               <li>#3000 / NX-2798 (Labels on the charts (and tooltips) always show in K/M, even when legend show values in KiB/MiB)</li>
+               <li>#3030 / NX-2828 (Display the last change date in agent policy list)</li>
+               <li>#3045 / NX-2843 (Allow to change helpdesk reference on alarm from script)</li>
+               <li>#3048 / NX-2846 (Store last position for Windows Event Sync (wineventsync) subagent)</li>
+               <li>#3049 / NX-2847 (Limit for how many days missed windows events should be processed)</li>
+               <li>#3064 / NX-2862 (.zip package deployment issues)</li>
+               <li>#3070 / NX-2868 (Add output console in Object Query)</li>
+               <li>#3080 / NX-2878 (Add EPP rule GUID and name to Action Log and EPP rule name to Notification Log)</li>
+               <li>#3087 / NX-2886 (.apkg package should abort on systems where agent is installed from packages)</li>
+               <li>#3089 / NX-2888 (Add notification on the object view: "agent restart pending" with button "restart")</li>
+               <li>#3102 / NX-2901 (No error displayed when read-only user edits a DCI)</li>
+               <li>#3136 (Skip repeated values in "Show history" on the DCI)</li>
+               <li>#3137 (Agent reports less installed software packages when user is not logged in)</li>
+               <li>#3140 (Tab key moves cursor to the right)</li>
+               <li>#3144 ("Go to Template DCI" does not work for instance discovery)</li>
+               <li>#3147 (Thresholds with repeat event option set keep generating events even when threshold processing on DCI is disabled)</li>
+               <li>#3149 (Add support for SSH keyboard-interactive authentication method)</li>
+               <li>#3151 (New NetXMS installations should generate self signed certificate for Agent to server connection)</li>
+               <li>#3154 (Enable SSL certificate verification for AI provider connections)</li>
+               <li>#3155 (Add SYSTEM\_ACCESS\_USE\_AI\_ASSISTANT access right)</li>
+               <li>#3156 (Add missing audit logging for trap mapping operations)</li>
+               <li>#3157 (Add EtherNet/IP proxy support to agent and server)</li>
+               <li>#3159 (linux/netlink.h not detected on Alpine)</li>
+               <li>#3160 (Asterisk subagent: remove exosip dependency)</li>
+               <li>#3161 (Topology poll on switch connected to Juniper switch incorrectly identifies connected ports)</li>
+               <li>#3164 (Virtual IP cluster resource is moved with delay, if node where it was is suddenly disconnected)</li>
+               <li>#3174 (Object tool filter should support isSSH)</li>
+               <li>NX-175 (Hide/Show some colums in tables)</li>
+               <li>NX-575 (Add object menu and 'Go to object' to subnet "Address Map")</li>
+               <li>NX-1008 (Add option to have "sample" count that is required before deactivation event generation)</li>
+               <li>NX-1925 (Add ability to export/import mapping tables)</li>
+               <li>NX-1961 (Tool for explaining object status calculation)</li>
+               <li>NX-2585 (Implement correct parsing of syslog messages according to RFC5424)</li>
+               <li>NX-2615 (Add ability to exclude certain subnets from topology, allowing to have duplicate IP addresses)</li>
+               <li>NX-2749 (Fallback proxy for Telegram notification channel)</li>
+               <li>NX-2805 (Terminate long-running NXSL scripts on server shutdown)</li>
+               <li>NX-2820 (Metadata for columns of tables from dbquery subagent)</li>
+               <li>NX-2852 (Option to regenerate threshold event if DCI value changed)</li>
+               <li>NX-2864 (Scripts referenced by another scripts are not added automatically to the export)</li>
+               <li>NX-2874 (Implement security contexts in NXSL)</li>
+               <li>NX-2890 (Perspective switched should support two modes - normal and narrow)</li>
+               <li>NX-2921 (New feature in file delivery policy: delete file)</li>
+               <li>NX-2930 (Forbid creation of table columns with identical names)</li>
+               <li>NX-2931 (Display enums and display hint in MIB explorer)</li>
+               <li>NX-2934 (System.IO.DiskTime global total sums percentages across disks, producing unusable values)</li>
+            </ul>
+         </description>
+      </release>
+   </releases>
+   <project_license>GPL-2.0-only</project_license>
+   <developer_name>Raden Solutions, SIA</developer_name>
+   <screenshots>
+      <screenshot type="default">
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.1/screenshots/screenshot1.png</image>
+         <caption>Dashboard showing Oracle metrics</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.1/screenshots/screenshot2.png</image>
+         <caption>List of active alarms on the server</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.1/screenshots/screenshot3.png</image>
+         <caption>Remote file manager</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.1/screenshots/screenshot4.png</image>
+         <caption>Geomap showing object location and statuses</caption>
+      </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <supports>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+   </supports>
+   <branding>
+      <color type="primary" scheme_preference="light">#d3dee4</color>
+      <color type="primary" scheme_preference="dark">#bbc5c9</color>
+   </branding>
+</component>
