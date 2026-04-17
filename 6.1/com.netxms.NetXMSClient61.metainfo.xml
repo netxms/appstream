@@ -27,6 +27,29 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient61.desktop</launchable>
    <releases>
+      <release version="6.1.1" date="2026-04-17">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#611</url>
+         <description>
+            <ul>
+               <li>Notification channel driver for Matrix</li>
+               <li>Improved status poll implementation when poll count for status change is greater than 1</li>
+               <li>Fixed bug in context menu display in alarm view, data collection view, and other table views</li>
+               <li>Fixed background colors in alarm view</li>
+               <li>#2471 / NX-2264 (In rack view, tooltip is shown for chassis, not for its elements)</li>
+               <li>#2560 / NX-2354 (Agent file policy are not propagated to cluster member nodes)</li>
+               <li>#2978 / NX-2776 (Add additional parameters to events created from synchronized Windows Events)</li>
+               <li>#3018 / NX-2816 (L2 topology map is built with same interface used multiple times)</li>
+               <li>#3036 / NX-2834 (Do not display value in percent in bar chart legend)</li>
+               <li>#3126 / NX-2926 (Logwatch last read location is incorrectly saved for Windows agent)</li>
+               <li>#3166 (Escape special characters in Prometheus metric argument values)</li>
+               <li>#3173 (Set restrictive file permissions on auto-generated cert/key files)</li>
+               <li>#3175 (CTabFolder high CPU consumption in Infrastructure and Entire Network)</li>
+               <li>#3176 (Support for installed product list retrieval on apk-based distributions)</li>
+               <li>#3189 (Incorrect current value in chart legend)</li>
+               <li>#3190 (Multiple Asterisk subagent metrics fail on newer Asterisk versions)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.1.0" date="2026-04-16">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#610</url>
          <description>
