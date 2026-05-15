@@ -27,6 +27,38 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient61.desktop</launchable>
    <releases>
+      <release version="6.1.2" date="2026-05-15">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#612</url>
+         <description>
+            <ul>
+               <li>Script entry point can be specified in "execute NXSL script" actions</li>
+               <li>Improved performance of data migration when upgrading from versions before 6.0</li>
+               <li>File manager subagent supports `nofollow` (do not follow symlinks) option for configured roots</li>
+               <li>Notification channel drivers that accepts endpoint URLs in configuration or as recipient explicitly forbids any protocols besides http(s)</li>
+               <li>Fixed intermittent SNMP proxy failures</li>
+               <li>Fixed regression in SNMP walk that broke handling of buggy agents returning table rows in random order</li>
+               <li>Fixed pre-authentication buffer overflow in SNMPv3 USM parser</li>
+               <li>Fixed bug in updating instance discovery DCIs from templates</li>
+               <li>Fixed pre-authentication OOB read in NXCP binary message parser</li>
+               <li>Fixed the SHA-1 + AES-192/256 and SHA-224 + AES-256 key extension bug in SNMP library</li>
+               <li>Fixed default object tool Connect SSH</li>
+               <li>Fixed issues with language switch in nxmc</li>
+               <li>Updated Brazilian Portuguese translation</li>
+               <li>Added cisco performance monitoring template</li>
+               <li>#2290 / NX-2081 (Allow to go to object details from event log source with right click option)</li>
+               <li>#3195 (Slow query from idata tables on MySQL)</li>
+               <li>#3199 (Add agent metric to read smartctl raw values)</li>
+               <li>#3200 (Port in Ports view should be selected when right-clicking it)</li>
+               <li>#3208 (Add Nodes via ARP Cache Tab)</li>
+               <li>#3211 (Set browser document title for RWT shells)</li>
+               <li>#3212 (filemgr subagent: path-traversal weaknesses in CheckFullPath / GetRealPath)</li>
+               <li>#3214 (Wrong localized texts in Web UI)</li>
+               <li>#3219 (Legacy web API: java.lang.NoClassDefFoundError: jakarta/servlet/ServletContext)</li>
+               <li>#3222 (Dragging of tabs to currenly hidden docking area)</li>
+               <li>#3223 (Allow dragging tabs from main area to docking areas)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.1.1" date="2026-04-17">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#611</url>
          <description>
