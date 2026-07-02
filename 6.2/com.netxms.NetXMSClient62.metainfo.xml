@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<component type="desktop-application">
+   <id>com.netxms.NetXMSClient62</id>
+   <metadata_license>CC-BY-SA</metadata_license>
+   <name>NetXMS 6.2</name>
+   <summary>Control your network monitoring</summary>
+   <description>
+      <p>This app is a desktop client for accessing NetXMS v6.2.x server.</p>
+      <p>NetXMS is an enterprise grade multi-platform modular open source network management and
+         monitoring system.</p>
+      <p>It provides comprehensive event management, performance monitoring, alerting, reporting and
+         graphing for all layers of IT infrastructure — from network devices to business application
+         layer.</p>
+      <p>Having been designed with flexibility and scalability in mind, NetXMS features a wide range
+         of supported platforms.</p>
+      <p>It is licensed under the GNU General Public License version 2 as published by the Free
+         Software Foundation.</p>
+   </description>
+   <keywords>
+      <keyword>network monitoring software</keyword>
+      <keyword>network management tool</keyword>
+      <keyword>enterprise grade nms</keyword>
+   </keywords>
+   <url type="homepage">https://netxms.com</url>
+   <url type="vcs-browser">https://github.com/netxms/netxms/</url>
+   <url type="bugtracker">http://track.radensolutions.com/</url>
+   <url type="help">http://netxms.org/documentation/adminguide/</url>
+   <launchable type="desktop-id">com.netxms.NetXMSClient62.desktop</launchable>
+   <releases>
+      <release version="6.2.0" date="2026-07-02">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#620</url>
+         <description>
+            <ul>
+               <li>OpenTelemetry (OTLP) support: ingestion of logs, plus export of events and metrics to OTLP endpoints</li>
+               <li>Network maps can be displayed on a geographic world map</li>
+               <li>Real-time graphs</li>
+               <li>Tiered DCI data aggregation (hourly and daily aggregates)</li>
+               <li>Graphs are drawn progressively while historical data is still loading</li>
+               <li>95th percentile lines and time markers on history graphs</li>
+               <li>3D view for racks</li>
+               <li>Object tools are available on access points, sensors, and interfaces</li>
+               <li>Localization support for object tools</li>
+               <li>LLDP information access via NetXMS agent on nodes with lldpd</li>
+               <li>Access to action execution log and notification log requires separate access rights</li>
+               <li>Read-only access right for credential visibility</li>
+               <li>Debug console 'exec' command will only execute scripts from pre-configured locations</li>
+               <li>Local user passwords hashed with argon2id instead of SHA-256</li>
+               <li>Direct upgrade from versions before 2.1.0 is no longer possible</li>
+               <li>New subagent for monitoring Microsoft SQL Server</li>
+               <li>Consistent configuration format and unified database list across all database subagents</li>
+               <li>Prometheus/OpenMetrics endpoint scraping in prometheus subagent</li>
+               <li>Generic JSON-over-TCP protocol for building agent extensions</li>
+               <li>Added postgres monitoring template</li>
+               <li>Added monitoring templates for Microsoft SQL Server and VMware vCenter</li>
+               <li>AI assistant has access to EPP and can create, modify, and delete rules</li>
+               <li>AI assistant can build dashboards</li>
+               <li>Added driver for Fortinet FortiSwitch series</li>
+               <li>Crash dump generation on Windows no longer relies on Google Breakpad</li>
+               <li>#81 (Line Charts From Dashboard Elements)</li>
+               <li>#419 / NX-213 (DCI data aggregation)</li>
+               <li>#549 / NX-343 (Relative time filters in logs)</li>
+               <li>#780 / NX-569 (Network maps on world map)</li>
+               <li>#812 / NX-601 (VMWare alarms from SNMP traps)</li>
+               <li>#872 / NX-661 (Zoom network maps with mouse wheel)</li>
+               <li>#931 / NX-720 (95th percentile lines on graphs)</li>
+               <li>#1002 / NX-792 (Push all related objects to connected users when ACL changed)</li>
+               <li>#1063 / NX-853 (Draw graph while it is being loaded)</li>
+               <li>#1084 / NX-874 (Show reconciliation status and progress in GUI)</li>
+               <li>#1118 / NX-908 ("Source node" setting for DCIs is not exported)</li>
+               <li>#1128 / NX-918 (Markers on graphs)</li>
+               <li>#1299 / NX-1089 (Peer interface IP)</li>
+               <li>#1477 / NX-1267 (Object Tools Icons - Pick from Image Library)</li>
+               <li>#1708 / NX-1498 (MySQL subagent: databases autodiscovery)</li>
+               <li>#1783 / NX-1573 (Real-time graphs)</li>
+               <li>#1921 / NX-1711 (If node name is IP address and netxms detects IP address change, amend node name to the new IP address)</li>
+               <li>#2014 / NX-1804 (No error messages for SNMP node status/configuration/topology poll, if proxy for that node is down)</li>
+               <li>#2015 / NX-1805 (Add NXSL support for setting SNMP credentials)</li>
+               <li>#2122 / NX-1913 (Ability to download files from Agent Policies)</li>
+               <li>#2150 / NX-1941 (Clean up database monitoring configuration format)</li>
+               <li>#2217 / NX-2008 (Object tools in switch port context)</li>
+               <li>#2363 / NX-2155 (Feature Request - Expand All Child Containers)</li>
+               <li>#2425 / NX-2218 (ACL for Action Execution log and Notification log)</li>
+               <li>#2519 / NX-2313 (Log parser for log files when new record is not ended in new line character)</li>
+               <li>#2631 / NX-2425 (Object Tools on interfaces)</li>
+               <li>#2686 / NX-2480 (Add ability to schedule polls from NXSL)</li>
+               <li>#2780 / NX-2577 (Create standard template for MS SQL server monitoring)</li>
+               <li>#2784 / NX-2581 (Create templates for vcenter monitoring with help of pyvmomi)</li>
+               <li>#2802 / NX-2599 (Add ability to terminate Windows sessions from User Session tab)</li>
+               <li>#2881 / NX-2678 (Add special column for SNMP table DCI that would contain instance part of OID)</li>
+               <li>#2896 / NX-2693 (delete DCI method)</li>
+               <li>#2949 / NX-2746 (Separate OS platform name from agent platform name)</li>
+               <li>#3011 / NX-2809 (Add OAuth to SMTP notification channel driver)</li>
+               <li>#3023 / NX-2821 (Add support for 802.1x from custom OID for Huawei)</li>
+               <li>#3068 / NX-2866 (Object query in dashboard should take column definitions from metadata if no columns are defined)</li>
+               <li>#3094 / NX-2893 (Last value request for DCI in error state should return error indicator instead of last known good value)</li>
+               <li>#3138 (Web service query tool)</li>
+               <li>#3141 (Method for manually setting peer interface for interface class in NXSL)</li>
+               <li>#3178 (Interface to lldpd in Linux agent)</li>
+               <li>#3179 (Add configurable list of allowed sources for "exec" in debug console)</li>
+               <li>#3180 (Use mapping tables to provide display value for DCIs)</li>
+               <li>#3183 (Use SNMP MIB enum values when displaying DCI value)</li>
+               <li>#3185 (Make configurable automatic column resize in table views)</li>
+               <li>#3191 (Use restrictive security context for NXSL scripts that semantically should not modify anything)</li>
+               <li>#3201 (Add NXSL methods to set node postal address)</li>
+               <li>#3203 (Drop pre-2.1 database upgrade path from nxdbmgr)</li>
+               <li>#3204 (Move idata/tdata table creation from metadata rows to code)</li>
+               <li>#3210 (Add RADIUS Access-Challenge 2FA flow)</li>
+               <li>#3217 (Subnet Scan Window for Adding Nodes)</li>
+               <li>#3218 (Allow agent upgrade via packages without requiring full MasterServers access)</li>
+               <li>#3221 (MSSQL Monitoring Subagent)</li>
+               <li>#3227 (Add generic JSON-over-TCP integration protocol support)</li>
+               <li>#3241 (Harmonize object tool icons with image library (use UUID reference instead of embedded blob))</li>
+               <li>#3242 (Add support for mongodb C driver version 2.2.2 (2.x?))</li>
+               <li>#3243 (Add localization option to object tools)</li>
+               <li>#3254 (Add speed parameter to SYS_IF_DOWN and SYS_IF_UP events)</li>
+               <li>#3258 (Generate event on server startup if background upgrade is pending)</li>
+               <li>#3261 (NXSL object methods for accessing DCI objects and values)</li>
+               <li>#3263 (Generate event when SNMP traps are not accepted due to incorrect credentials)</li>
+               <li>#3265 (Change color of disabled EPP rules)</li>
+               <li>#3266 (DataCollection.TemplateRemovalGracePeriod server configuration variable should have units)</li>
+               <li>#3268 (Use regex and Multiple match checkboxes not set when adding instance prototype to context dashboard)</li>
+               <li>#3278 (Unable to cancel a package deployment job)</li>
+               <li>#3280 (Object tools of type AGENT_LIST / AGENT_TABLE / SNMP_TABLE silently ignore input fields and don't expand macros)</li>
+               <li>#3281 (Add Oracle.Databases list parameter to Oracle subagent)</li>
+               <li>#3286 (SQL errors after in-place database conversion to TimescaleDB)</li>
+               <li>#3287 (Interfaces show as [0] in FDB tab of Fortiswitch)</li>
+               <li>#3288 (Provide a consistent database-list parameter across all database subagents for unified instance discovery)</li>
+               <li>#3292 (Add OpenTelemetry (OTLP) logs ingestion to the OTLP module)</li>
+               <li>#3293 (AI log tools (aitools/logs.cpp) use stale EventOrigin numbering, mislabel/mismatch origins)</li>
+               <li>#3295 (Add object access right for read-only credential visibility (READ_CREDENTIALS))</li>
+               <li>#3297 (New EPP action for changing LOG flag for event)</li>
+               <li>#3301 (Pluggable event forwarding framework (generalize FORWARD_EVENT into named drivers))</li>
+               <li>#3302 (OpenTelemetry (OTLP) event forwarder — export NetXMS events as OTLP logs)</li>
+               <li>#3303 (Allow server modules to register performance data storage (PDS) drivers in core)</li>
+               <li>#3304 (OpenTelemetry (OTLP) metrics export via module-registered PDS driver)</li>
+               <li>#3305 (SWT UI thread stuck in column-packing when applying a template)</li>
+               <li>#3308 (Add NXSL access to node L2 network path information)</li>
+               <li>#3310 (OTLP metric selector — server-side catalog of observed metrics for DCI configuration)</li>
+               <li>#3311 (3D view for racks)</li>
+               <li>#3313 (DCI summary table editor: no UI control for "Multiple instances" (MULTI_INSTANCE) flag)</li>
+               <li>#3314 (Prometheus/OpenMetrics endpoint scraping in prometheus subagent)</li>
+               <li>#3317 (TSDB:  "connection_history" is not a hypertable or a continuous aggregate)</li>
+               <li>#3319 (Agent metrics and instance discovery not working on collector and circuit)</li>
+               <li>#3321 (Add support for nxencpasswd passwords to oxidized module)</li>
+               <li>#3322 (logwatch subagent not picking LSI Storage Authority win event log events)</li>
+               <li>#3323 (Tools -&gt; Agent Explorer and MIB explorer have close button, restored on restart)</li>
+               <li>#3324 (Show and parse human readable time in server action timers)</li>
+               <li>#3325 (Add processing metadata to events)</li>
+               <li>#3328 (Solaris/SPARC: object classes packed because Studio 12.6 ignores #pragma pack() reset → SIGBUS)</li>
+               <li>#3329 (libnxlp: uninitialized LogParser::m_useSnapshot when parser XML has no &lt;file&gt; element (Windows))</li>
+               <li>#3331 (netxmsd crash: unbounded maskBits in AdjustSubnetBaseAddress causes OOB write on IPv6 subnet overlap)</li>
+               <li>#3332 (Subnet::setCorrectMask not zoning-aware: corrupts subnet address index in zoning mode)</li>
+               <li>#3333 (Oxidized historical backup retrieval returns latest config for every version)</li>
+               <li>#3334 (Add Oracle Database monitoring template)</li>
+               <li>#3335 (Oracle subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3336 (MySQL subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3337 (PostgreSQL subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3338 (MongoDB subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3339 (DB2 subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3340 (Informix subagent: adopt canonical connection terminology and config schema (#3288))</li>
+               <li>#3341 (Template DCI threshold changes are not synchronized to nodes)</li>
+               <li>#3342 (Replace Google Breakpad with own crash-dump generation code on Windows)</li>
+               <li>#3343 (Stable per-element GUID identity for dashboard elements)</li>
+               <li>#3344 (AI assistant skill for building dashboards)</li>
+               <li>#3345 (Add per-database (per-schema) statistics to MySQL subagent)</li>
+               <li>#3346 (Web service request headers silently truncated at 2048 bytes)</li>
+               <li>#3348 (add alarm category(as defined in EPP) to /v1/alarms new API call)</li>
+               <li>#3349 (Inconsistent zoneUIN interpretation in address lists: IsAddressInTopologyExcludedSubnet treats zone 0 as "all zones")</li>
+               <li>#3350 (Dashboard metric picker should handle {instance-value} macro)</li>
+               <li>#3352 (Table Value Dashboard element should show only table DCIs in it's picker)</li>
+               <li>#3353 (STP topology discovery creates false inter-switch links across Huawei M-LAG pair)</li>
+            </ul>
+         </description>
+      </release>
+   </releases>
+   <project_license>GPL-2.0-only</project_license>
+   <developer_name>Raden Solutions, SIA</developer_name>
+   <screenshots>
+      <screenshot type="default">
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.2/screenshots/screenshot1.png</image>
+         <caption>Dashboard showing Oracle metrics</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.2/screenshots/screenshot2.png</image>
+         <caption>List of active alarms on the server</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.2/screenshots/screenshot3.png</image>
+         <caption>Remote file manager</caption>
+      </screenshot>
+      <screenshot>
+         <image>
+            https://raw.githubusercontent.com/netxms/appstream/master/6.2/screenshots/screenshot4.png</image>
+         <caption>Geomap showing object location and statuses</caption>
+      </screenshot>
+   </screenshots>
+   <content_rating type="oars-1.1" />
+   <supports>
+      <control>pointing</control>
+      <control>keyboard</control>
+      <control>touch</control>
+   </supports>
+   <branding>
+      <color type="primary" scheme_preference="light">#d3dee4</color>
+      <color type="primary" scheme_preference="dark">#bbc5c9</color>
+   </branding>
+</component>
