@@ -27,6 +27,49 @@
    <url type="help">http://netxms.org/documentation/adminguide/</url>
    <launchable type="desktop-id">com.netxms.NetXMSClient62.desktop</launchable>
    <releases>
+      <release version="6.2.1" date="2026-07-07">
+         <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#621</url>
+         <description>
+            <ul>
+               <li>Added NXSL method Node::setVNCPassword() to set VNC password</li>
+               <li>Support for environment files in agent configuration; potentially sensitive environment variables are masked in configuration dump</li>
+               <li>Added internal metrics for measuring traffic between server and agents</li>
+               <li>Improved external subagent watchdog on Windows (reconciles orphaned and duplicate subagent processes)</li>
+               <li>File delivery policy editor allows creating multiple nested folders at once</li>
+               <li>Cisco performance template displays environmental component status as readable text</li>
+               <li>Oracle and PostgreSQL monitoring templates no longer auto-unbind when the database is temporarily unreachable</li>
+               <li>Fixed information disclosure (IDOR) in topology endpoints of web API</li>
+               <li>Fixed privilege escalation via scheduled-task create/update in web API</li>
+               <li>Fixed authenticated denial-of-service issues in web API (self password change) and NXCP (CMD\_RESOLVE\_DCI\_NAMES)</li>
+               <li>#2918 / NX-2715 (Add internal metrics to measure traffic between server and agents)</li>
+               <li>#3206 (Tools perspective views missing in nxmc on Raspberry Pi)</li>
+               <li>#3256 (Spikes of uncorrelated interface down events when a zone has multiple proxies and one becomes unreachable)</li>
+               <li>#3282 (nxmc: local command object tools not executed on host under Flatpak)</li>
+               <li>#3296 (Custom attribute table not scaled to width of user properties window)</li>
+               <li>#3307 (Metric selector for agent metrics not working on sensor with gateway node set)</li>
+               <li>#3351 (Special way to store secrets in agent configuration file)</li>
+               <li>#3356 (DCI mapping table reference is lost when configuration is exported and imported on another server)</li>
+               <li>#3357 (Cisco performance template: display environmental component status as readable text)</li>
+               <li>#3358 (Oracle and PostgreSQL monitoring templates auto-unbind when the database is unreachable)</li>
+               <li>#3359 (Database upgrade to 62.13 fails: stock image files removed by package upgrade before migration)</li>
+               <li>#3360 (Database export does not include module-specific metadata entries)</li>
+               <li>#3361 (Server time displayed in UTC instead of server timezone for numeric timezone abbreviations)</li>
+               <li>#3366 (Query web services access right not set on upgrade for Admins group)</li>
+               <li>#3367 (Cannot invoke ImageDataFactory: session-bound image used for decorated user icons in web UI)</li>
+               <li>#3368 (External subagent watchdog restarts still-initializing subagents, spawning duplicate instances on Windows)</li>
+               <li>#3370 (External subagent watchdog: reconcile orphaned/duplicate subagent processes across master restart and config changes on Windows)</li>
+               <li>#3371 (WebAPI: scheduled-task create/update bypasses per-handler access rights)</li>
+               <li>#3372 (WebAPI: null-pointer dereference in self password change crashes netxmsd)</li>
+               <li>#3375 (WebAPI: topology endpoints leak metadata of objects the caller cannot read)</li>
+               <li>#3376 (Client session: unbounded allocation and missing NULL check in CMD\_RESOLVE\_DCI\_NAMES)</li>
+               <li>#3378 (Create NXSL method to set VNC password)</li>
+               <li>#3379 (Option to add multiple folders in file delivery policy at once separated by '/')</li>
+               <li>#3380 (Template import silently drops table DCIs due to JSON key case mismatch)</li>
+               <li>#3381 (Columns readjusted one by one on Windows so tables appear to flicker)</li>
+               <li>#3386 (Database initialization fails on Oracle with ORA-01704: stock image INSERT literals too long)</li>
+            </ul>
+         </description>
+      </release>
       <release version="6.2.0" date="2026-07-02">
          <url>https://github.com/netxms/changelog/blob/master/ChangeLog.md#620</url>
          <description>
